@@ -19,6 +19,11 @@ export default function Form() {
             <span className="text-sm">I agree to terms & conditions</span>
         </div>
         <Button label='SignUp'/>
+        <div className="flex items-center justify-center">
+              <div className="bg-gray-300 h-px flex-grow t-2" />
+              <span className="flex-shrink mx-4 text-gray-400">Or</span>
+              <div className="bg-gray-300 h-px flex-grow t-2" />
+        </div>
         <Oauth />
     </div>
   )
