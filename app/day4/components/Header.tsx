@@ -8,10 +8,10 @@ export default function Header() {
 
     const navItems =[
         {label: 'Ride', href: '/'},
-        {label: 'Drive', href: '#'},
-        {label: 'Business', href: '#'},
-        {label: 'Uber Eats', href: '#'},
-        {label: 'About', href: '#'},
+        {label: 'Drive', href: '#drive'},
+        {label: 'Business', href: '#business'},
+        {label: 'Uber Eats', href: '#eats'},
+        {label: 'About', href: '#about'},
         
     ]
 
@@ -22,7 +22,7 @@ export default function Header() {
     }
 
   return (
-    <div className="bg-black flex border-b">
+    <div className="bg-black flex">
         <div className=''>
             <Image src={'/Images/logo.png'} alt='uber' height={50} width={100} />
         </div>

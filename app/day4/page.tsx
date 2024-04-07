@@ -3,7 +3,7 @@ import Header from './components/Header'
 import Main from './components/main'
 import Join from './components/join'
 import Reinvented from './components/reinvented'
-import Footer from './components/footer'
+import Footer from './components/footer/footer'
 
 export default function Home() {
   return (

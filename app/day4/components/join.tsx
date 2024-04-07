@@ -6,7 +6,7 @@ import Image from 'next/image'
 export default function Join() {
   return (
     <div className="p-6 md:p-12 flex flex-col  md:grid md:grid-cols-2 bg-white text-black h-screen space-y-5 md:space-y-5">
-        <div className="space-y-4">
+        <div className="flex flex-col space-y-4 items-center justify-center">
             <h3 className="text-3xl md:text-5xl font-bold">Drive When you Want, Earn what you need </h3>
             <h4 className="text-lg">Make money on your schedule with deliveries or rides—or both. You can use your own car or choose a rental through Uber</h4>
 
