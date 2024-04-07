@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-6 md:p-24">
       <div className="space-y-6">
-        <h4 className="text-2xl md:text-5xl">#30daysofFrondEndDevelopment using NEXTJS and tailwindCSS</h4>
+        <h4 className="text-2xl font-bold md:text-5xl">#30daysofFrondEndDevelopment using NEXTJS and tailwindCSS</h4>
         <p>Welcome to the #30daysofFrondEndDevelopment project! This website showcases a collection of 30 unique user interfaces built using React.js and the Next.js framework. I embarked on this as learning challenge, design exploration and are excited to share my creations with you.</p>
         <h2>My Goals for this challenge</h2>
         <ul>
