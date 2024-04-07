@@ -6,6 +6,6 @@ interface props{
 }
 export default function Button({color,label}:props) {
   return (
-    <button className={`bg-${color} rounded-lg p-2 w-1/4`}>{label}</button>
+    <button className={`bg-${color} rounded-lg p-2`}>{label}</button>
   )
 }

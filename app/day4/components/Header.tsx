@@ -22,7 +22,7 @@ export default function Header() {
     }
 
   return (
-    <div className="bg-black flex">
+    <div className={`bg-black h-auto ${navOpen ? 'flex-col': 'flex'}`}>
         <div className=''>
             <Image src={'/Images/logo.png'} alt='uber' height={50} width={100} />
         </div>
@@ -33,9 +33,9 @@ export default function Header() {
                 ) )}
             </ul>
         </div>
-        <div className=" flex m-4 space-x-4">
-            <Link href={'#'} className="text-white">Login</Link>
-            <Link href={'#'} className="bg-white text-black p-2 rounded">Sign Up</Link>
+        <div className="flex flex-wrap m-6 space-x-12 p-3 md:absolute right-14">
+            <Link href={'#'} className="text-white p-1">Login</Link>
+            <Link href={'#'} className="bg-white text-black p-1 rounded-lg h-8">Sign Up</Link>
         </div>
         <div>
             <button className="absolute top-10 right-8 flex text-white text-4xl md:hidden" onClick={menuOpen}>
