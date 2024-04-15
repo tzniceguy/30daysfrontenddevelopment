@@ -1,5 +1,7 @@
 import React from 'react'
 import NavBar from './NavBar'
+import Billing from './billing'
+import Payment from './payment'
 
 export default function Main() {
   return (
@@ -7,8 +9,9 @@ export default function Main() {
         <div className="md:col-span-1">
             <NavBar />
         </div>
-        <div className="md:col-span-1">
-            Billing
+        <div className="md:col-span-1 p-4">
+            <Billing />
+            <Payment />
         </div>
         <div className="md:col-span-1">
             plan
