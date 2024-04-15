@@ -1,6 +1,7 @@
 import React from 'react'
 import { tableData } from '../tabledata';
 import Link from 'next/link';
+import Button from './button';
 
 interface TableData {
   date: string;
@@ -8,7 +9,7 @@ interface TableData {
 }
 export default function Table() {
   return (
-    <table className="border-spacing-2">
+    <table className="border-spacing-2 w-full">
         <thead>
           <tr>
             <th>Date</th>
@@ -18,10 +19,10 @@ export default function Table() {
         </thead>
         <tbody>
           {tableData.map((datavalue => (
-            <tr key={datavalue.date} className="p-2">
+            <tr key={datavalue.date} className="p-2 m-2">
               <td>{datavalue.date}</td>
               <td>{datavalue.type}</td>
-              <td><Link href={'#'}><span className="">Download</span></Link></td>
+              <td><Button label='Download' /></td>
             </tr>
           )))}
         </tbody>
