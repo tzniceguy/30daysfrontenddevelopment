@@ -1,6 +1,5 @@
 import React from 'react'
 import { tableData } from '../tabledata';
-import Link from 'next/link';
 import Button from './button';
 
 interface TableData {

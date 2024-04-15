@@ -22,18 +22,18 @@ export default function NavBar() {
     ]
 
   return (
-    <div className={`p-4  md:h-screen md:w-56 ${navOpen ? 'space-y-3': 'space-y-0'} md:space-y-4`}>
+    <div className={`p-4 fixed md:h-screen md:w-56 ${navOpen ? 'space-y-3': 'space-y-0'} md:space-y-4 sticky top-2`}>
         <div className={`md:p-4 ${navOpen ? 'border-b-2':'border-none'}`}>
             <Avatar />
         </div>
-        <div className={` ${navOpen ? 'block' : 'hidden'} md:flex md:p-4`}>
+        <div className={` ${navOpen ? 'block' : 'hidden'} md:flex md:p-4 ${navOpen ? 'h-full': 'h-auto'}`}>
             <ul className={`${navOpen ? 'space-y-3': 'space-y-0'}md:space-y-6`}>
                 {listItems.map((item => (
                     <li key={item.label} className="">
                         <Link href={item.href}>
                             <div className="flex p-2">
-                                <div className="text-xl md:text-4xl">{item.icon}</div>
-                                <div className="text-center md:text-xl">{item.label}</div>
+                                <div className="text-xl md:text-3xl">{item.icon}</div>
+                                <div className="text-center md:text-lg">{item.label}</div>
                             </div>
                         </Link>
                     </li>
