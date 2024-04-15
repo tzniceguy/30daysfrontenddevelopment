@@ -2,20 +2,21 @@ import React from 'react'
 import NavBar from './NavBar'
 import Billing from './billing'
 import Payment from './payment'
+import Card from './card'
 
 export default function Main() {
   return (
-    <div className="flex-col md:flex md:grid-cols-3">
-        <div className="md:col-span-1">
+    <main className="md:flex md:grid-cols-3">
+        <div className="">
             <NavBar />
         </div>
-        <div className="md:col-span-1 p-4">
+        <div className="p-6 md:h-screen flex flex-col md:items-center md:w-2/4">
             <Billing />
             <Payment />
         </div>
-        <div className="md:col-span-1">
-            plan
+        <div className="p-6">
+            <Card />
         </div>
-    </div>
+    </main>
   )
 }
